@@ -2,14 +2,14 @@ import React from "react";
 
 export default class CoordinatesButton extends React.Component {
 
-    printCoordinates = (event) => {
+    printCoord = (event) => {
         const coorinates = [event.clientX, event.clientY]
         this.props.onReceiveCoordinates(coorinates)
     }
 
     render() {
         return (
-            <button onClick={this.printCoordinates}>Button 1</button>
+            <button onClick={this.printCoord}>Button 1</button>
         )
     }
 }
